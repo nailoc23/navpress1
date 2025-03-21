@@ -17,6 +17,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <style>
+      /* 맨 위로 이동 버튼 스타일 */
+      #scrollTopBtn {
+          position: fixed;
+          bottom: 30px;
+          right: 30px;
+          display: none; /* 기본적으로 숨김 */
+          z-index: 1000;
+          background-color: #87CEEB; /* 부드러운 하늘색 */
+          color: white; /* 아이콘 색상 */
+          border: none;
+          width: 50px;
+          height: 50px;
+          font-size: 24px;
+          border-radius: 50%;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      #scrollTopBtn:hover {
+          background-color: #5eb5d9; /* 조금 더 진한 하늘색 */
+          transform: scale(1.1); /* 버튼 확대 */
+      }
+  </style>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -837,7 +862,7 @@
             <div class="swiper-slide">
               <div class="card position-relative p-4 border rounded-3">
                 <img src="images/book-5.jpg" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="single-product.html">My Dearest Darkest</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="single-product.html">Appointment Diary</a></h6>
                 <div class="review-content d-flex">
                   <p class="my-2 me-2 fs-6 text-black-50">출판사</p>
 
@@ -881,7 +906,7 @@
             <div class="swiper-slide">
               <div class="card position-relative p-4 border rounded-3">
                 <img src="images/book-6.jpg" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="single-product.html">The Story of Success</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="single-product.html">Appointment Diary</a></h6>
                 <div class="review-content d-flex">
                   <p class="my-2 me-2 fs-6 text-black-50">출판사</p>
 
@@ -934,11 +959,12 @@
         <div class="row d-flex align-items-center">
           <div class="col-md-6 text-center">
             <div class="image-holder">
-              <img src="images/banner-image3.png" class="img-fluid" alt="banner">
+              <img src="images/banner-image-book.png" class="img-fluid" alt="banner">
             </div>
           </div>
           <div class="col-md-5 offset-md-1 mt-5 mt-md-0 text-center text-md-start">
-            <h3>[그리스도를 알고 그를 알게 하라]</h3>
+            <h3>그리스도를 알고 그를 알게하라</h3>
+            <p> 네비게이토 출판사는 네비게이토 선교회의 문서선교를 담당하고 있습니다. 영적 성장을 돕는 서적과 자료들을 출판하여 모든 그리스도인으로 하여금 삶의 기초가 견고한 제자로 성장하고, 나아가 성숙한 인격과 지도력을 갖춘 일꾼이 되도록 돕고 있습니다.</p>
             <div id="countdown-clock" class="text-dark d-flex align-items-center my-3">
               <div class="time d-grid pe-3">
                 <span class="days fs-1 fw-normal"></span>
@@ -990,7 +1016,7 @@
           <div class="col-md-3 posts mb-4">
             <img src="images/post-item3.jpg" alt="post image" class="img-fluid rounded-3">
             <a href="blog.html" class="fs-6 text-primary">Blog</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="single-post.html">네비게이토 사역과 문서 선교</a></h4>
+            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="single-post.html">네비게이토 문서선교</a></h4>
             <p class="mb-2">2024/12/17 <span><a class="text-decoration-underline text-black-50" href="single-post.html">1 Comment</a></span>
             </p>
           </div>
@@ -1444,7 +1470,8 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="card position-relative text-left p-5 border rounded-3">
-                <blockquote>"I stumbled upon this bookstore while visiting the city, and it instantly became my favorite spot. The cozy atmosphere, friendly staff, and wide selection of books make every visit a delight!"</blockquote>
+                <blockquote>"다윗이 추구한 것 오직 그리스도 예수
+                  하늘의 비밀을 맡은 충성스런 일군이라 지칭한 고전 4:1 말씀의 비밀을 다윗이 풀어 주고 있슴을 알았습니다. 다윗의 믿음을 기뻐하시는 이유를 알았습니다."</blockquote>
                 <div class="rating text-warning d-flex align-items-center">
                   <svg class="star star-fill">
                     <use xlink:href="#star-fill"></use>
@@ -1462,12 +1489,13 @@
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Emma Chamberlin</h5>
+                <h5 class="mt-1 fw-normal">해같이 빛나리</h5>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card position-relative text-left p-5 border rounded-3">
-                <blockquote>"As an avid reader, I'm always on the lookout for new releases, and this bookstore never disappoints. They always have the latest titles, and their recommendations have introduced me to some incredible reads!"</blockquote>
+                <blockquote>"참좋으신 하나님 아버시입니다
+                  너희가 악한 자라도 좋은 것으로 자식에게 줄 줄 알거든 하물며 하늘에 계신 너희 아버지께서 구하는 자에게 좋은 것으로 주시지 않겠느냐"</blockquote>
                 <div class="rating text-warning d-flex align-items-center">
                   <svg class="star star-fill">
                     <use xlink:href="#star-fill"></use>
@@ -1485,12 +1513,12 @@
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Thomas John</h5>
+                <h5 class="mt-1 fw-normal">뿌리깊은 나무</h5>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card position-relative text-left p-5 border rounded-3">
-                <blockquote>"I ordered a few books online from this store, and I was impressed by the quick delivery and careful packaging. It's clear that they prioritize customer satisfaction, and I'll definitely be shopping here again!"</blockquote>
+                <blockquote>"하나님 아버지께 나아갈 때는 치과 예약하듯이 미리 예약할 필요도 없고 대기 시간도 없고 언제 어디에서라도 가능하니 얼마나 좋은지요!"</blockquote>
                 <div class="rating text-warning d-flex align-items-center">
                   <svg class="star star-fill">
                     <use xlink:href="#star-fill"></use>
@@ -1508,10 +1536,11 @@
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Kevin Bryan</h5>
+                <h5 class="mt-1 fw-normal">SK Park</h5>
               </div>
             </div>
-            <div class="swiper-slide">
+
+            <!-- <div class="swiper-slide">
               <div class="card position-relative text-left p-5 border rounded-3">
                 <blockquote>“I stumbled upon this tech store while searching for a new laptop, and I couldn't be happier
                   with my experience! The staff was incredibly knowledgeable and guided me through the process of choosing
@@ -1560,7 +1589,7 @@
                 </div>
                 <h5 class="mt-1 fw-normal">Roman</h5>
               </div>
-            </div>
+            </div>  -->
           </div>
         </div>
       </div>
@@ -1718,30 +1747,19 @@
                     <li class="menu-item mb-1">
                       <a href="#">도서활용법</a>
                     </li>
-                    <li class="menu-item mb-1">
-                      <a href="#">주문</a>
-                    </li>
-                    <li class="menu-item mb-1">
-                      <a href="#">블로그</a>
-                    </li>
+                    
                   </ul>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6 pb-3">
                 <div class="footer-menu text-capitalize">
-                  <h5 class="widget-title pb-2">Help & Info Help</h5>
+                  <h5 class="widget-title pb-2">주문 및 공지사항</h5>
                   <ul class="menu-list list-unstyled">
                     <li class="menu-item mb-1">
-                      <a href="#">Track Your Order</a>
+                      <a href="#">주문</a>
                     </li>
                     <li class="menu-item mb-1">
-                      <a href="#">Returns Policies</a>
-                    </li>
-                    <li class="menu-item mb-1">
-                      <a href="#">Shipping + Delivery</a>
-                    </li>
-                    <li class="menu-item mb-1">
-                      <a href="#">Contact Us</a>
+                      <a href="#">블로그</a>
                     </li>
                     <li class="menu-item mb-1">
                       <a href="#">Faqs</a>
@@ -1793,7 +1811,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>        
+
+    <!-- 맨 위로 이동 버튼 -->
+    <button id="scrollTopBtn">
+      ^
+    </button>
 
     <!-- <script src="js/jquery-1.11.0.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -1802,5 +1825,27 @@
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+
+    
+
+  <!-- JavaScript -->
+  <script>
+      // 버튼 요소 가져오기
+      let scrollTopBtn = document.getElementById("scrollTopBtn");
+
+      // 스크롤 이벤트 감지
+      window.onscroll = function() {
+          if (document.documentElement.scrollTop > 200) {
+              scrollTopBtn.style.display = "block"; // 200px 이상 스크롤 시 버튼 표시
+          } else {
+              scrollTopBtn.style.display = "none"; // 위로 올라가면 숨김
+          }
+      };
+
+      // 버튼 클릭 시 최상단 이동
+      scrollTopBtn.addEventListener("click", function() {
+          window.scrollTo({ top: 0, behavior: "smooth" }); // 부드러운 스크롤 적용
+      });
+  </script>
   </body>
 </html>
